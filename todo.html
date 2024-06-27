@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <script src="todo.js"></script>
+        <div class="container">
+
+            <h1>To Do List</h1>
+
+            <div id="field">
+            <input type="text" id="input" placeholder="할 일을 추가하세요" onkeydown="enterKey()" name="hal1">
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="todoList"></ul>
+            <button type="button" id="clearBtn" onclick="clearAll()">전체 삭제</button>
+        </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: antiquewhite;
+    margin: 10px auto;
+    width: 800px;
+    border-radius: 20px;
+}
+h1 {
+    padding-top: 25px;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+#field {
+    padding-left: 40px ;
+}
+#input{
+    width: calc(100% - 45px);
+    border-radius: 10px;
+    padding: 10px ;
+    padding-left: 10px;
+    font-size: 20px;
+    border:2px solid silver;
+}
+.shake{
+    animation: shake 0.1s 3;
+}
+#input:focus {
+    outline:none
+}
+#todoList{
+    list-style-type: none;
+}
+#clearBtn{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+#clearBtn:active{
+    background-color: red;
+}
+
+#input:placeholder-shown {border-color: red}
+#input:placeholder-shown + .msg {display:none}
+
+@keyframes shake {
+    from {
+      transform: rotate(1deg);
+    }
+    to {
+      transform: rotate(-1deg);
+    }
+}
+
+span#checkbox{
+    content:"";
+    display:inline-block;
+    width:17px;
+    height:17px;
+    border:2px solid rgb(59, 58, 58);
+    border-radius: 4px;
+}
+    
+span#checkbox:checked{
+    content:"";
+    background-color:rgb(59, 58, 58);
+    border-color:rgb(59, 58, 58);
+}
